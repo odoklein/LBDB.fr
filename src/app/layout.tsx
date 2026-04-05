@@ -1,50 +1,30 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Bricolage_Grotesque } from 'next/font/google'
+import { Inter_Tight } from 'next/font/google'
 
 import '@/app/_styles/globals.css'
 import { QueryProvider } from '@/app/_providers/query-provider'
-import { ToastProvider } from '@/components/ui/toast'
-import { generateMetadata } from '@/lib/seo'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const interTight = Inter_Tight({
+  variable: '--font-inter-tight',
   subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
-
-const bricolageGrotesque = Bricolage_Grotesque({
-  variable: '--font-bricolage-grotesque',
-  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
-  ...generateMetadata({
-    title: 'ShipFree - Turn Ideas Into Products, Fast',
-    description:
-      'Ship your startup in days, not weeks. A production-ready Next.js boilerplate with auth, payments, and everything you need to launch fast. Free forever, open source.',
-    isRootLayout: true,
-  }),
+  title: 'Les Bras du Batiment | Main-d\'oeuvre BTP en Ile-de-France',
+  description:
+    'Decharement, manutention, demenagement de chantier. Des equipes reactives et encadrees, operationnelles en moins de 24h en Ile-de-France.',
   icons: {
-    icon: '/image.png',
-    shortcut: '/image.png',
-    apple: '/image.png',
+    icon: '/favicon.ico',
   },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bricolageGrotesque.variable} font-sans antialiased`}
-      >
-        <QueryProvider>
-          <ToastProvider>{children}</ToastProvider>
-          <div className="h-screen w-full fixed top-0 left-0 -z-10  bg-[url('/grain.jpg')] opacity-5" />
-        </QueryProvider>
+    <html lang="fr">
+      <body className={`${interTight.variable} font-sans antialiased`}>
+        <QueryProvider>{children}</QueryProvider>
       </body>
     </html>
   )

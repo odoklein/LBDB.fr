@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun add:*)",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(ls -la /c/Users/dell/Desktop/LBDB.fr/*.config.* /c/Users/dell/Desktop/LBDB.fr/tsconfig.json)"
+    ]
+  }
+}
