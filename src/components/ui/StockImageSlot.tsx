@@ -25,7 +25,7 @@ export default function StockImageSlot({ slot, className }: StockImageSlotProps)
       )}
       aria-label={`Image placeholder: ${config.label}`}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(242,68,5,0.18),transparent_45%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(232,168,0,0.20),transparent_45%)]" />
       <div className="absolute inset-x-0 bottom-0 h-[1px] bg-orange/20" />
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-6 text-center">
         <p className="text-[11.5px] font-semibold uppercase tracking-[0.07em] text-orange">Stock Image Slot</p>

@@ -41,7 +41,7 @@ const bentoItems = [
 export default function BentoValueGrid() {
   return (
     <section id="services" className="relative bg-white py-24 lg:py-32">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_10%_0%,rgba(19,39,77,0.06),transparent_35%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_10%_0%,rgba(0,53,128,0.08),transparent_35%)]" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"

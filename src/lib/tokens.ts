@@ -1,11 +1,11 @@
 export const colors = {
-  orange: { DEFAULT: '#f24405', hover: '#d93a03' },
-  navy: { DEFAULT: '#13274d', deep: '#0d1c38', mid: '#162448', light: '#1c3060', border: '#2a3f6e' },
-  ink: '#101827',
-  steel: '#5a606a',
-  slate: '#706f7e',
-  border: '#e2e4ea',
-  surface: '#f4f5f7',
+  orange: { DEFAULT: '#e8a800', hover: '#c89200' },
+  navy: { DEFAULT: '#003580', deep: '#1a1a2e', mid: '#0057b8', light: '#66bf8e', border: '#1f4f95' },
+  ink: '#1a1a2e',
+  steel: '#4b5372',
+  slate: '#6f7794',
+  border: '#dfe3eb',
+  surface: '#f5f5f0',
 } as const
 
 export const fadeUpVariants = {

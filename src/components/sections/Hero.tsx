@@ -26,8 +26,8 @@ export default function Hero() {
 
   return (
     <section className="relative bg-white pt-32 lg:pt-40 pb-0 overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_14%,rgba(19,39,77,0.08),transparent_40%)]" />
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,rgba(242,68,5,0.05)_50%,transparent_100%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_14%,rgba(0,53,128,0.10),transparent_40%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,rgba(232,168,0,0.08)_50%,transparent_100%)]" />
       <div className="mx-auto max-w-[1280px] px-6 md:px-12 lg:px-24">
         <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-12 lg:gap-16 items-center">
           {/* Left content */}
@@ -103,7 +103,7 @@ export default function Hero() {
             >
               <Link
                 href={conversionCtas.primary.href}
-                className="cta-pulse inline-flex items-center gap-2 px-[30px] py-[15px] bg-orange text-white text-[15px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_rgba(242,68,5,0.38)] hover:bg-orange-hover hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(242,68,5,0.45)] transition-all duration-200 group"
+                className="cta-pulse inline-flex items-center gap-2 px-[30px] py-[15px] bg-orange text-white text-[15px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_var(--orange-shadow)] hover:bg-orange-hover hover:-translate-y-0.5 hover:shadow-[0_12px_32px_var(--orange-shadow)] transition-all duration-200 group"
               >
                 Recevoir une equipe en urgence
                 <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">

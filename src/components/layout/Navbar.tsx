@@ -70,7 +70,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <Link
             href={conversionCtas.primary.href}
-            className="hidden lg:inline-flex items-center px-5 py-2.5 bg-orange text-white text-[13px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_rgba(242,68,5,0.38)] hover:bg-orange-hover hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(242,68,5,0.45)] transition-all duration-200"
+            className="hidden lg:inline-flex items-center px-5 py-2.5 bg-orange text-white text-[13px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_var(--orange-shadow)] hover:bg-orange-hover hover:-translate-y-0.5 hover:shadow-[0_12px_32px_var(--orange-shadow)] transition-all duration-200"
           >
             {conversionCtas.primary.label}
           </Link>
@@ -132,7 +132,7 @@ export default function Navbar() {
                 <Link
                   href={conversionCtas.primary.href}
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-center w-full px-6 py-4 bg-orange text-white text-[15px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_rgba(242,68,5,0.38)] hover:bg-orange-hover transition-all duration-200"
+                  className="flex items-center justify-center w-full px-6 py-4 bg-orange text-white text-[15px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_var(--orange-shadow)] hover:bg-orange-hover transition-all duration-200"
                 >
                   {conversionCtas.primary.label}
                 </Link>

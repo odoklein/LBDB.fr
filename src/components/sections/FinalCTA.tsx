@@ -41,7 +41,7 @@ export default function FinalCTA() {
         >
           <Link
             href={conversionCtas.primary.href}
-            className="cta-pulse inline-flex items-center gap-2 px-[30px] py-[15px] bg-orange text-white text-[15px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_rgba(242,68,5,0.38)] hover:bg-orange-hover hover:-translate-y-0.5 transition-all duration-200"
+            className="cta-pulse inline-flex items-center gap-2 px-[30px] py-[15px] bg-orange text-white text-[15px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_var(--orange-shadow)] hover:bg-orange-hover hover:-translate-y-0.5 transition-all duration-200"
           >
             Demander un renfort chantier
           </Link>

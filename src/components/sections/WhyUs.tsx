@@ -65,7 +65,7 @@ export default function WhyUs() {
             >
               <Link
                 href={conversionCtas.primary.href}
-                className="inline-flex items-center gap-2 px-[30px] py-[15px] bg-orange text-white text-[15px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_rgba(242,68,5,0.38)] hover:bg-orange-hover hover:-translate-y-0.5 transition-all duration-200 group"
+                className="inline-flex items-center gap-2 px-[30px] py-[15px] bg-orange text-white text-[15px] font-bold uppercase tracking-[0.04em] rounded-[6px] shadow-[0_8px_28px_var(--orange-shadow)] hover:bg-orange-hover hover:-translate-y-0.5 transition-all duration-200 group"
               >
                 {conversionCtas.primary.label}
                 <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">

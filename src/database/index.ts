@@ -6,10 +6,18 @@ import { env } from '@/config/env'
 
 const databaseUrl = env.DATABASE_URL
 
-if (!databaseUrl) {
-  throw new Error('DATABASE_URL is required. Please set it in your .env file.')
-}
+const missingDatabaseUrlError = () =>
+  new Error('DATABASE_URL is required. Please set it in your environment variables.')
 
-const queryClient = postgres(databaseUrl)
+const queryClient = databaseUrl ? postgres(databaseUrl) : null
 
-export const db = drizzle({ client: queryClient, schema })
+export const db = queryClient
+  ? drizzle({ client: queryClient, schema })
+  : (new Proxy(
+      {},
+      {
+        get() {
+          throw missingDatabaseUrlError()
+        },
+      }
+    ) as ReturnType<typeof drizzle<typeof schema>>)

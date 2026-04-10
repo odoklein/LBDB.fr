@@ -5,7 +5,7 @@ import { fadeUpChild, motionViewport, staggerContainer } from '@/lib/tokens'
 import { services } from '@/lib/marketing-content'
 const serviceIcons = [
   (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f24405" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-orange" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="1" y="6" width="22" height="15" rx="2" />
       <path d="M1 10h22" />
       <path d="M12 6V3" />
@@ -14,7 +14,7 @@ const serviceIcons = [
     </svg>
   ),
   (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f24405" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-orange" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="1" y="3" width="15" height="13" rx="2" />
       <path d="M16 8h4l3 3v5h-7V8z" />
       <circle cx="5.5" cy="18.5" r="2.5" />
@@ -22,7 +22,7 @@ const serviceIcons = [
     </svg>
   ),
   (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f24405" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-orange" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M3 6h18" />
       <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
       <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
