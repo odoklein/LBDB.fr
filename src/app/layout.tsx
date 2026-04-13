@@ -12,9 +12,9 @@ const interTight = Inter_Tight({
 })
 
 export const metadata: Metadata = {
-  title: 'Les Bras du Batiment | Main-d\'oeuvre BTP en Ile-de-France',
+  title: 'Manutention chantier, logistique chantier et debarras BTP | Les Bras du Batiment',
   description:
-    'Decharement, manutention, demenagement de chantier. Des equipes reactives et encadrees, operationnelles en moins de 24h en Ile-de-France.',
+    'Les Bras du Batiment accompagne les professionnels du batiment et de l\'agencement avec des services de manutention chantier, logistique chantier, debarras et entretien regulier partout en France.',
   icons: {
     icon: '/favicon.ico',
   },

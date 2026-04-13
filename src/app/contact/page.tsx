@@ -10,8 +10,8 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import { contactSlidingSplits } from '@/lib/marketing-content'
 
 export const metadata: Metadata = {
-  title: 'Contact | Les Bras du Batiment',
-  description: 'Contactez LBDB pour une intervention chantier en Ile-de-France et recevez une reponse rapide.',
+  title: 'Demande de devis manutention chantier | Les Bras du Batiment',
+  description: 'Contactez Les Bras du Batiment pour une intervention chantier partout en France et recevez une reponse rapide.',
 }
 
 export default function ContactPage() {

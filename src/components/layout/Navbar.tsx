@@ -31,14 +31,14 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-white/88 backdrop-blur-[20px] border-b border-border shadow-[0_1px_4px_rgba(16,24,40,0.06)]'
+            ? 'bg-white/92 backdrop-blur-[20px] border-b border-border shadow-[0_1px_4px_rgba(16,24,40,0.06)]'
             : 'bg-transparent'
         }`}
       >
         <div className="mx-auto max-w-[1280px] px-6 md:px-12 lg:px-24 flex items-center justify-between h-16 lg:h-[72px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-orange flex items-center justify-center">
+          <Link href="/" className="flex items-center gap-2.5">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-navy to-navy-mid flex items-center justify-center shadow-[0_2px_8px_rgba(0,53,128,0.25)]">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
@@ -51,20 +51,23 @@ export default function Navbar() {
 
           {/* Desktop nav links */}
           <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`relative text-[14px] font-medium transition-colors duration-150 group ${
-                  pathname === link.href ? 'text-ink' : 'text-steel hover:text-ink'
-                }`}
-              >
-                {link.label}
-                <span className={`absolute -bottom-1 left-0 h-[2px] bg-orange transition-all duration-200 ${
-                  pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'
-                }`} />
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href.split('#')[0]) && link.href !== '/'
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`relative text-[14px] font-medium transition-colors duration-150 group ${
+                    isActive ? 'text-ink' : 'text-steel hover:text-ink'
+                  }`}
+                >
+                  {link.label}
+                  <span className={`absolute -bottom-1 left-0 h-[2px] bg-orange transition-all duration-200 ${
+                    isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`} />
+                </Link>
+              )
+            })}
           </div>
 
           {/* Desktop CTA */}

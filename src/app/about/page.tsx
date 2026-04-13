@@ -12,7 +12,7 @@ import { aboutSlidingSplits } from '@/lib/marketing-content'
 
 export const metadata: Metadata = {
   title: 'A propos | Les Bras du Batiment',
-  description: 'Decouvrez LBDB, partenaire de main-d oeuvre BTP en Ile-de-France pour des interventions rapides et fiables.',
+  description: 'Les Bras du Batiment accompagne les professionnels du batiment et de l\'agencement partout en France avec des services de manutention, logistique et debarras.',
 }
 
 export default function AboutPage() {

@@ -12,8 +12,8 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import { servicesSlidingSplits } from '@/lib/marketing-content'
 
 export const metadata: Metadata = {
-  title: 'Services | Les Bras du Batiment',
-  description: 'Dechargement, manutention, demenagement et nettoyage chantier avec des equipes reactives en Ile-de-France.',
+  title: 'Services de manutention chantier et logistique BTP | Les Bras du Batiment',
+  description: 'Dechargement, manutention, debarras, nettoyage et renfort chantier. Des equipes reactives pour les professionnels du batiment partout en France.',
 }
 
 export default function ServicesPage() {

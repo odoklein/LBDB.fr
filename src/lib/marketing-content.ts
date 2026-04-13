@@ -1,25 +1,26 @@
-export const primaryPhoneHref = 'tel:+33100000000'
-export const primaryPhoneLabel = '+33 1 00 00 00 00'
-export const primaryEmail = 'contact@lbdb.fr'
+export const primaryPhoneHref = 'tel:+33400000000'
+export const primaryPhoneLabel = '+33 4 00 00 00 00'
+export const primaryEmail = 'contact@lesbrasdubatiment.fr'
 
 export const navLinks = [
   { label: 'Accueil', href: '/' },
   { label: 'Services', href: '/services' },
-  { label: 'Tarifs', href: '/pricing' },
-  { label: 'A propos', href: '/about' },
+  { label: 'Solutions', href: '/#solutions' },
+  { label: 'Secteurs', href: '/#secteurs' },
+  { label: 'FAQ', href: '/#faq' },
   { label: 'Contact', href: '/contact' },
 ] as const
 
 export const socialProofStats = [
-  { value: 200, prefix: '+', suffix: '', label: 'Missions' },
-  { value: 40, prefix: '', suffix: '+', label: 'Clients' },
-  { value: 98, prefix: '', suffix: '%', label: 'Satisfaction' },
-  { value: 24, prefix: '<', suffix: 'h', label: 'Delai' },
+  { value: 200, prefix: '+', suffix: '', label: 'Missions realisees' },
+  { value: 50, prefix: '', suffix: '+', label: 'Entreprises accompagnees' },
+  { value: 98, prefix: '', suffix: '%', label: 'Satisfaction client' },
+  { value: 24, prefix: '<', suffix: 'h', label: 'Delai d\'intervention' },
 ] as const
 
 export const trustBullets = [
-  '+40 clients satisfaits',
-  'Intervention < 24h',
+  'Intervention partout en France',
+  'Presence renforcee Auvergne-Rhone-Alpes',
   'Sans engagement',
 ] as const
 
@@ -27,40 +28,227 @@ export const logos = ['Bouygues', 'Vinci', 'Eiffage', 'Nexity', 'Kaufman', 'Icad
 
 export const services = [
   {
-    title: 'Dechargement & Manutention',
-    desc: 'Livraisons de materiaux, dechargement camions, transfert de charges lourdes.',
+    title: 'Dechargement des livraisons',
+    desc: 'Reception, dechargement et organisation des materiaux a l\'arrivee sur site pour eviter aux equipes de perdre du temps.',
+    icon: 'truck',
   },
   {
-    title: 'Demenagement de Chantier',
-    desc: "Deplacement d'equipements, reorganisation d'espaces en cours de travaux.",
+    title: 'Transport de materiaux sur chantier',
+    desc: 'Deplacement des materiaux jusqu\'aux zones de pose ou de travail pour faciliter l\'execution des taches.',
+    icon: 'package',
   },
   {
-    title: 'Nettoyage & Remise en etat',
-    desc: 'Fin de chantier, evacuation des dechets, remise a blanc des espaces.',
+    title: 'Manutention specialisee',
+    desc: 'Manutention d\'elements lourds, volumineux ou sensibles: menuiseries, mobilier, elements d\'agencement, equipements techniques.',
+    icon: 'crane',
+  },
+  {
+    title: 'Debarras de chantier',
+    desc: 'Evacuation des dechets, gravats, cartons, emballages et materiaux inutilises pour maintenir un chantier propre.',
+    icon: 'trash',
+  },
+  {
+    title: 'Nettoyage de fin de chantier',
+    desc: 'Remise au propre avant livraison afin de presenter un chantier professionnel et pret pour reception.',
+    icon: 'sparkles',
+  },
+  {
+    title: 'Entretien regulier du chantier',
+    desc: 'Intervention reguliere, hebdomadaire ou selon les besoins, pour maintenir un chantier propre et fonctionnel.',
+    icon: 'calendar',
+  },
+  {
+    title: 'Renfort ponctuel sur chantier',
+    desc: 'Intervention rapide en cas de pic d\'activite, chantier en retard, livraison importante ou manque de main-d\'oeuvre.',
+    icon: 'users',
+  },
+] as const
+
+export const solutionPacks = [
+  {
+    name: 'Pack Livraison',
+    desc: 'Reception, dechargement et organisation des materiaux a l\'arrivee sur site.',
+    icon: 'truck',
+    color: 'blue',
+  },
+  {
+    name: 'Pack Renfort',
+    desc: 'Renfort operationnel pour soutenir les equipes et absorber les pics d\'activite.',
+    icon: 'users',
+    color: 'amber',
+  },
+  {
+    name: 'Pack Debarras',
+    desc: 'Evacuation des dechets, gravats, emballages pour un chantier propre et fonctionnel.',
+    icon: 'trash',
+    color: 'green',
+  },
+  {
+    name: 'Pack Chantier Propre',
+    desc: 'Intervention reguliere pour gerer les dechets et conserver des zones de travail propres.',
+    icon: 'sparkles',
+    color: 'blue',
+  },
+  {
+    name: 'Pack Cle en Main',
+    desc: 'Solution globale: dechargement, manutention, organisation, debarras et nettoyage final.',
+    icon: 'key',
+    color: 'amber',
+    featured: true,
+  },
+] as const
+
+export const benefits = [
+  {
+    title: 'Gain de temps',
+    desc: 'Les equipes restent concentrees sur leur metier et avancent plus vite.',
+    icon: 'clock',
+  },
+  {
+    title: 'Gain d\'argent',
+    desc: 'Moins de temps perdu signifie une meilleure rentabilite du chantier.',
+    icon: 'coins',
+  },
+  {
+    title: 'Chantier organise',
+    desc: 'Les materiaux, les dechets et les zones de travail sont mieux geres.',
+    icon: 'layout',
+  },
+  {
+    title: 'Chantier securise',
+    desc: 'Un environnement de travail mieux tenu facilite l\'intervention des equipes.',
+    icon: 'shield',
+  },
+] as const
+
+export const painPoints = [
+  'Dechargement des livraisons',
+  'Transport des materiaux sur chantier',
+  'Manutention d\'elements lourds ou encombrants',
+  'Debarras des dechets',
+  'Organisation des zones de travail',
+  'Nettoyage du chantier',
+] as const
+
+export const clientTargets = [
+  {
+    title: 'Entreprises du batiment',
+    desc: 'Optimisation de l\'organisation des chantiers et amelioration de la productivite.',
+  },
+  {
+    title: 'Artisans',
+    desc: 'Soutien sur les taches de manutention, de debarras et de logistique chantier.',
+  },
+  {
+    title: 'Entreprises de renovation',
+    desc: 'Meilleure gestion des materiaux et des dechets pour faciliter l\'avancement des travaux.',
+  },
+  {
+    title: 'Societes d\'agencement',
+    desc: 'Manutention de mobilier, elements d\'agencement et operations d\'installation sur site.',
+  },
+  {
+    title: 'Menuisiers & Cuisinistes',
+    desc: 'Manutention et organisation sur chantier pour elements lourds, volumineux ou sensibles.',
+  },
+  {
+    title: 'Conducteurs de travaux',
+    desc: 'Solution concrete pour fluidifier les chantiers et mobiliser les equipes sur leur coeur de metier.',
+  },
+] as const
+
+export const whyUsPoints = [
+  {
+    title: 'Gain de temps reel',
+    desc: 'Nous prenons en charge les taches qui ralentissent les equipes.',
+  },
+  {
+    title: 'Meilleure rentabilite',
+    desc: 'Les equipes qualifiees restent mobilisees sur leur coeur de metier.',
+  },
+  {
+    title: 'Chantier propre et organise',
+    desc: 'Le debarras et l\'entretien regulier ameliorent le fonctionnement du site.',
+  },
+  {
+    title: 'Solution souple',
+    desc: 'Intervention ponctuelle, reguliere, urgente ou planifiee.',
+  },
+  {
+    title: 'Approche terrain',
+    desc: 'Nos interventions sont pensees pour les realites concretes des chantiers.',
+  },
+  {
+    title: 'Prevention et securite',
+    desc: 'Nous integrons une dimension formation et prevention des risques.',
+  },
+] as const
+
+export const processSteps = [
+  {
+    num: '01',
+    title: 'Vous nous expliquez votre besoin',
+    desc: 'Via le formulaire de devis ou par telephone, vous indiquez le type de mission, la localisation du chantier et la date souhaitee.',
+  },
+  {
+    num: '02',
+    title: 'Nous analysons votre demande',
+    desc: 'Nous evaluons la prestation, le volume, la frequence et l\'organisation necessaire.',
+  },
+  {
+    num: '03',
+    title: 'Nous intervenons sur chantier',
+    desc: 'Notre equipe prend en charge la manutention, le debarras, l\'organisation ou l\'entretien selon le besoin.',
+  },
+  {
+    num: '04',
+    title: 'Vous gagnez en efficacite',
+    desc: 'Le chantier est plus fluide, plus propre et vos equipes restent concentrees sur leur metier.',
   },
 ] as const
 
 export const faqs = [
   {
-    q: 'Intervenez-vous partout en Ile-de-France ?',
-    a: "Oui, nous couvrons Paris et toute l'Ile-de-France.",
+    q: 'Dans quels types de chantiers intervenez-vous ?',
+    a: 'Nous intervenons principalement sur des chantiers de construction, de renovation, d\'amenagement interieur et d\'agencement.',
   },
   {
-    q: 'Quel delai pour avoir une equipe ?',
-    a: 'Une equipe peut etre mobilisee en moins de 24h apres validation.',
+    q: 'Intervenez-vous partout en France ?',
+    a: 'Oui. Les Bras du Batiment intervient sur l\'ensemble du territoire francais avec une presence renforcee en Auvergne-Rhone-Alpes.',
   },
   {
-    q: 'Quels types de chantiers acceptez-vous ?',
-    a: 'Construction neuve, renovation, demolition et amenagement.',
+    q: 'Proposez-vous des interventions ponctuelles ?',
+    a: 'Oui. Nous pouvons intervenir pour une journee, plusieurs jours, un besoin urgent, une livraison importante ou un chantier necessitant un renfort temporaire.',
   },
   {
-    q: 'Comment se passe la facturation ?',
-    a: 'Devis clair avant mission puis facturation transparente.',
+    q: 'Proposez-vous des interventions regulieres ?',
+    a: 'Oui. Nous proposons un service d\'entretien regulier du chantier avec un passage hebdomadaire ou selon l\'avancement des travaux.',
   },
   {
-    q: 'Combien de personnes peut-on demander ?',
-    a: "De 1 a 20+ personnes selon l'envergure de votre chantier.",
+    q: 'Quels types d\'elements pouvez-vous manipuler ?',
+    a: 'Nous intervenons sur les materiaux de construction, les menuiseries, le mobilier, les elements d\'agencement, les equipements techniques et d\'autres elements volumineux ou lourds.',
   },
+  {
+    q: 'Gerez-vous les dechets de chantier ?',
+    a: 'Oui. Nous proposons un service de debarras de chantier comprenant l\'evacuation des gravats, cartons, emballages et dechets lies aux travaux.',
+  },
+  {
+    q: 'Proposez-vous du nettoyage de fin de chantier ?',
+    a: 'Oui. Nous realisons la remise au propre avant livraison ou reception du chantier.',
+  },
+  {
+    q: 'Proposez-vous des formations ?',
+    a: 'Oui. En partenariat avec un centre de formation specialise, nous proposons des actions de sensibilisation et de prevention des risques dans le secteur du batiment.',
+  },
+  {
+    q: 'Comment obtenir un devis ?',
+    a: 'Il suffit de remplir le formulaire de demande de devis sur le site ou de nous contacter directement. Nous analysons votre besoin et vous proposons une solution adaptee.',
+  },
+] as const
+
+export const interventionZones = [
+  'Lyon', 'Annecy', 'Grenoble', 'Chambery',
+  'Rhone', 'Isere', 'Savoie', 'Haute-Savoie',
 ] as const
 
 export const pricingPlans = [
@@ -95,7 +283,7 @@ export const aboutHighlights = [
 
 export const aboutStats = [
   { label: 'Missions realisees', value: '+200' },
-  { label: 'Clients actifs', value: '40+' },
+  { label: 'Clients actifs', value: '50+' },
   { label: 'Satisfaction', value: '98%' },
   { label: 'Temps de reponse', value: '<2h' },
 ] as const
@@ -139,7 +327,7 @@ export const testimonials = [
     quote:
       "LBDB nous a sauves sur une phase critique. Equipe presente en moins de 24h, encadrement propre et zero perte de cadence.",
     author: 'Conducteur de travaux',
-    company: 'Entreprise generale IDF',
+    company: 'Entreprise generale Rhone-Alpes',
   },
   {
     quote:
@@ -177,6 +365,14 @@ export const contactExpectations = [
   "Point d'activation operationnel avec vos equipes",
 ] as const
 
+export const highlightPhrases = [
+  'Vos equipes sont payees pour construire, pas pour porter.',
+  'Un chantier plus rapide est un chantier plus rentable.',
+  'Moins de manutention, plus de production.',
+  'Un chantier propre est un chantier plus efficace.',
+  'La performance d\'un chantier passe aussi par la securite.',
+] as const
+
 export interface SlidingSplitItem {
   eyebrow: string
   title: string
@@ -193,6 +389,8 @@ export interface SlidingSplitItem {
     | 'pricingVisibility'
     | 'contactFollowup'
     | 'contactKickoff'
+    | 'servicesMaterialHandling'
+    | 'homeHeroMain'
 }
 
 export const homeSlidingSplits: readonly SlidingSplitItem[] = [
@@ -333,5 +531,6 @@ export const contactSlidingSplits: readonly SlidingSplitItem[] = [
 export const conversionCtas = {
   primary: { label: 'Demander un devis', href: '/contact' },
   secondary: { label: 'Voir nos services', href: '/services' },
+  callback: { label: 'Etre rappele rapidement', href: '/contact#callback' },
   pricing: { label: 'Voir nos tarifs', href: '/pricing' },
 } as const
